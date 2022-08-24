@@ -1,11 +1,23 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import nakamaHome from '../views/nakamaHome.vue'
+import loggInnPage from '../views/loggInnPage.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/nakamaHome',
+    name: 'nakamaHome',
+    component: nakamaHome
+  },
+  {
+    path: '/loggInnPage',
+    name: 'loggInnPage',
+    component: loggInnPage
   },
   {
     path: '/about',
