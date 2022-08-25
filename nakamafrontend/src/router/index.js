@@ -2,6 +2,8 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import nakamaHome from '../views/nakamaHome.vue'
 import loggInnPage from '../views/loggInnPage.vue'
+import registrerPage from '../views/registrerPage.vue'
+import mineSider from '../views/mineSider.vue'
 
 const routes = [
   {
@@ -18,6 +20,16 @@ const routes = [
     path: '/loggInnPage',
     name: 'loggInnPage',
     component: loggInnPage
+  },
+  {
+    path: '/registrerPage',
+    name: 'registrerPage',
+    component: registrerPage
+  },
+  {
+    path: '/mineSider',
+    name: 'mineSider',
+    component: mineSider
   },
   {
     path: '/about',

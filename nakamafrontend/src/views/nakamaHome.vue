@@ -1,25 +1,25 @@
 <template>
-  <div class="home">
-  <div class="rektangelDiv">
-        <div class="rektangell">
-            <div class="imageInRektangel">
-                <img src="../assets/shadow-removebg-preview.png" alt="" class="friendsPic">
-                <!-- <img src="../assets/image-removebg-preview.png" alt="" class="nakamaTekst"> -->
+  <div class="flex justify-center items-center h-screen w-screen">
+  <div class="border-4  h-3/5 w-3/5 flex flex-col border-violet-900 bg-violet-100">
+        <div class="flex justify-center items-center">
+            <div class="flex flex-col items-center justify-center">
+                <img src="../assets/rsz_shadow-removebg-preview.png" alt="" class="mt-16">
+              <img alt="Vue logo" src="../assets/image-removebg-preview.png">
+              <p class="text-2xl mt-2">Every new friend is a new adventure</p>
             </div>
         </div>
-        <button class="loggInnButton">logg inn</button>
-        <button class="registrerButton">registrer</button>
+        <div class="flex flex-row justify-center mt-20">
+             <button class="border-2 h-6 w-20 pb-0.5 ml-4 border-violet-400 rounded">logg inn</button>
+            <button class="border-2 h-6 w-20 pb-0.5 ml-8 border-violet-400 bg-violet-400 text-white rounded">registrer</button>
+        </div>
      </div>
   </div>
 </template>
 
 <style>
-    body.background-image{
-        height: fit-content;
-        width: fit-content; 
-    }
+     
 
-    .backgroundDiv{
+    /* .backgroundDiv{
         width: fit-content;
         height: fit-content;
         overflow: hidden;
@@ -28,12 +28,12 @@
         margin: 0px;
       
        
-    }
-    .backgroundPic{
+    } */
+    /* .backgroundPic{
       width: 1450px;
       height: 600px;
       margin: -10px 0px -10px -180px;
-    }
+    } */
 
     .imageInRektangel{
         height: 350px;
@@ -78,9 +78,9 @@
         mix-blend-mode: normal;
         position: absolute;
     }
-    /* body{
-            background: url("backgroundWithoutBlackBorder.png");
+    body{
+            background: url("../assets/backgroundWithoutBlackBorder.png");
             background-size: 100vw, 100vh;
             background-repeat: no-repeat;
-        } */
+        }
 </style>
