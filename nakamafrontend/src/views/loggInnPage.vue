@@ -31,3 +31,19 @@
     </div>
   </div>
 </template>
+
+
+<script>
+// import store from '@/store'
+// import { defineAsyncComponent } from 'vue'
+export default {
+  name: 'loginnPage',
+  mounted() {
+    // fetch('https://nakama1.herokuapp.com/getallusers')
+    // .then(res => res.json())
+    // .then(data => console.log(data))
+  },
+  methods: {},
+  components: {}
+}
+</script>
