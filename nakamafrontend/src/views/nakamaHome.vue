@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center items-center h-screen w-screen">
-  <div class="border-4  h-3/5 w-3/5 flex flex-col border-violet-900 bg-violet-100">
+  <div class="border-4  h-3/5 w-3/5 flex flex-col border-violet-900 bg-violet-100 bg-opacity-70">
         <div class="flex justify-center items-center">
             <div class="flex flex-col items-center justify-center">
                 <img src="../assets/rsz_shadow-removebg-preview.png" alt="" class="mt-16">
