@@ -4,12 +4,18 @@ import nakamaHome from '../views/nakamaHome.vue'
 import loggInnPage from '../views/loggInnPage.vue'
 import registrerPage from '../views/registrerPage.vue'
 import mineSider from '../views/mineSider.vue'
+import logedInPage from '../views/logedInPage.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/logedInPage',
+    name: 'logedInPage',
+    component: logedInPage
   },
   {
     path: '/nakamaHome',
