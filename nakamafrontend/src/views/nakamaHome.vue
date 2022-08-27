@@ -1,20 +1,42 @@
 <template>
-  <div class="flex justify-center items-center h-screen w-screen">
-  <div class="border-4  h-3/5 w-3/5 flex flex-col border-violet-900 bg-violet-100 bg-opacity-70">
-        <div class="flex justify-center items-center">
-            <div class="flex flex-col items-center justify-center">
-                <img src="../assets/rsz_shadow-removebg-preview.png" alt="" class="mt-16">
-              <img alt="Vue logo" src="../assets/image-removebg-preview.png">
-              <p class="text-2xl mt-2">Every new friend is a new adventure</p>
-            </div>
-        </div>
-        <div class="flex flex-row justify-center mt-20">
-             <button class="border-2 h-6 w-20 pb-0.5 ml-4 border-violet-400 rounded">logg inn</button>
-            <button class="border-2 h-6 w-20 pb-0.5 ml-8 border-violet-400 bg-violet-400 text-white rounded">registrer</button>
-        </div>
-     </div>
+  <div>
+    <img src="../assets/backgroundWithoutBlackBorder.png" class="z-0 opacity-60 absolute w-screen h-screen" alt="">
+    <div class="flex justify-center items-center h-screen w-screen absolute">
+    <div class="border-2 h-3/5 w-3/5 flex flex-col border-nakama-pink rounded font-semibold bg-white bg-opacity-75">
+          <div class="flex justify-center items-center">
+              <div class="flex flex-col items-center justify-center mt-36">
+                <img src="../assets/rsz_shadow-removebg-preview.png" alt="" class="mt-16 w-[500px] h-[250px] opacity-10 absolute ">
+                <img alt="Vue logo" src="../assets/image-removebg-preview.png" class="w-[550px] mt-12 absolute">
+              </div>
+          </div>
+          <div class="mt-56 relative">
+            <p class="text-[30px] font-[Garamond] mb-7">Every new friend is a new adventure</p>
+            <div class="flex flex-row justify-center">
+              <StyledButton class="w-36" :text="'LOGIN'"></StyledButton>
+              <div class="w-10"></div>
+              <StyledButton class="w-36" :text="'REGISTER'"></StyledButton>   
+            </div>      
+          </div>
+       </div>
+    </div>
   </div>
 </template>
+<script>
+import { defineAsyncComponent } from 'vue'
+const StyledButton = defineAsyncComponent(
+  () => import('@/components/StyledButton')
+)
+
+export default {
+  name: 'Hero-custom',
+  props: {
+
+  },
+  components: {
+    StyledButton
+  }
+}
+</script>
 
 <style>
      
@@ -78,9 +100,9 @@
         mix-blend-mode: normal;
         position: absolute;
     }
-    body{
+    /* body{
             background: url("../assets/backgroundWithoutBlackBorder.png");
             background-size: 100vw, 100vh;
             background-repeat: no-repeat;
-        }
+        } */
 </style>
