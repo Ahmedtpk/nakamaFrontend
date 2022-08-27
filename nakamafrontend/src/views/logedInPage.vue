@@ -10,7 +10,7 @@
         <button class="text-xs font-bold text-black ml-8">Iman</button>
         <button class="ml-8"><img src="../assets/imanProfile.webp" alt="" class="rounded-full h8 w-8"></button>
     </div>
-    <div class=" h-4/5 flex flex-col bg-violet-100 mx-2 rounded-md mt-8 bg-opacity-70 shadow-md ">
+    <div class=" h-4/5 flex flex-col mx-2 rounded-md mt-8 bg-opacity-70 shadow-md ">
 
         <div class="flex flex-row">
             <p class="text-l font-bold text-black ml-16 mt-4">Discover new groups</p>
