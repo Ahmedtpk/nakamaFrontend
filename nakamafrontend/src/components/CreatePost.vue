@@ -9,7 +9,7 @@
             <input type="text" class="border h-10 w-full shadow-sm rounded-lg mb-4" placeholder="Type*">
              <p class="text-s text-black mb-4"> Event time / estimated time:</p>
             <input type="text" class="border h-10 w-full shadow-sm rounded-lg mb-4" placeholder="Time*">
-            <StyledButton :text="'Create post'" class=" flex self-end mt-4"></StyledButton>
+            <StyledButton :text="'Create post'" class=" flex self-end mt-4 mb-4"></StyledButton>
         </div>
     </div>
 </template>
