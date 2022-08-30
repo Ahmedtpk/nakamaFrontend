@@ -1,6 +1,6 @@
 <template>
-<div class="w-screen flex justify-center">
-    <div class=" w-11/12 h-screen flex flex-col">
+<div class=" w-max-screen h-max-screen flex justify-center">
+    <div class="w-11/12 h-full flex flex-col">
       <div class="w-full h-64  flex flex-row items-center">
           <p class="text-xl font-bold text-black w-1/3 flex justify-center">Discover new groups</p>
           <p class="text-xl font-bold text-black w-1/3 flex justify-center">Upcoming events</p>
@@ -8,17 +8,17 @@
       </div>
       <div class="flex flex-row w-full h-full">
           <div class="w-1/3 h-full flex justify-center">
-            <div class="h-fit pb-4  w-10/12 bg-nakama-beige flex justify-center rounded-lg shadow-xl flex-col">
+            <div class="h-fit pb-4 w-10/12 bg-nakama-beige flex justify-center rounded-lg shadow-xl flex-col overflow-hidden">
               <GroupCard></GroupCard>
               <GroupCard></GroupCard>
               <GroupCard></GroupCard>
             </div>
           </div>
-          <div class="w-1/3 h-full flex flex-col items-center">
+          <div class="w-1/3 h-full flex flex-col items-center overflow-hidden">
              <PostCard class="mb-20"></PostCard>
              <PostCard></PostCard>
           </div>
-          <div class="w-1/3 h-full flex justify-center">
+          <div class="w-1/3 h-full flex justify-center overflow-hidden">
              <CreatePost></CreatePost>
           </div>
       </div>
