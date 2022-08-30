@@ -3,10 +3,31 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav> -->
-  <router-view/>
+  <div>
+    <NavBar></NavBar>
+    <router-view/>
+  </div>
 </template>
 
-<style>
+<script>
+import { defineAsyncComponent } from 'vue'
+const NavBar = defineAsyncComponent(
+  () => import('@/components/NavBar')
+)
+
+export default {
+  name: 'App',
+  props: {
+
+  },
+  components: {
+    NavBar
+  }
+}
+</script>
+
+<!-- <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,4 +48,4 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
-</style>
+</style> -->
