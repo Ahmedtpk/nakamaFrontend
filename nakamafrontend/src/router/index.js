@@ -5,6 +5,7 @@ import loggInnPage from '../views/loggInnPage.vue'
 import registrerPage from '../views/registrerPage.vue'
 import mineSider from '../views/mineSider.vue'
 import logedInPage from '../views/logedInPage.vue'
+import GroupPage from '../views/GroupPage.vue'
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/mineSider',
     name: 'mineSider',
     component: mineSider
+  },
+  {
+    path: '/GroupPage',
+    name: 'GroupPage',
+    component: GroupPage
   },
   {
     path: '/about',

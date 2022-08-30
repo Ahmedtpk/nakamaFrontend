@@ -1,5 +1,5 @@
 <template>
-<div class=" w-[32rem] h-48 flex flex-col rounded-lg bg-nakama-beige shadow-xl">
+<div class=" w-max-[32rem] h-48 flex flex-col rounded-lg bg-nakama-beige shadow-xl">
   <div class="flex flex-row w-full h-3/4 mt-4 ml-2">
     <img src="../assets/academicworkwbg.png" alt="" class="h-12 w-14">
     <div class="mt-2 ml-2">

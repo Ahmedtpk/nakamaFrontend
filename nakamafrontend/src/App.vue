@@ -6,14 +6,20 @@
   <div>
     <NavBar></NavBar>
     <router-view/>
+    <!-- <NavigationFooter class="mt-auto"></NavigationFooter> -->
   </div>
+
 </template>
 
 <script>
 import { defineAsyncComponent } from 'vue'
+
 const NavBar = defineAsyncComponent(
   () => import('@/components/NavBar')
 )
+// const NavigationFooter = defineAsyncComponent(
+//   () => import('@/components/NavigationFooter')
+// )
 
 export default {
   name: 'App',
@@ -21,8 +27,9 @@ export default {
 
   },
   components: {
-    NavBar
-  }
+    NavBar,
+    // NavigationFooter
+}
 }
 </script>
 
