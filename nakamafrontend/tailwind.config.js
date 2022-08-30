@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: { 
-        'nakama-pink': '#EF666F'
+        'nakama-pink': '#EF666F',
+        'nakama-beige': '#FAF7F4'
       },
       fontFamily: {
         nakama: ['OpenSans-Regular', 'sans-serif'],
