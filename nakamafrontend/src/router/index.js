@@ -6,12 +6,19 @@ import registrerPage from '../views/registrerPage.vue'
 import mineSider from '../views/mineSider.vue'
 import logedInPage from '../views/logedInPage.vue'
 import GroupPage from '../views/GroupPage.vue'
+import ProfilePage from '../views/ProfilePage.vue'
+import friendPage from '../views/friendPage.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/friendPage',
+    name: 'friendPage',
+    component: friendPage
   },
   {
     path: '/logedInPage',
@@ -42,6 +49,11 @@ const routes = [
     path: '/GroupPage',
     name: 'GroupPage',
     component: GroupPage
+  },
+  {
+    path: '/ProfilePage',
+    name: 'ProfilePage',
+    component: ProfilePage
   },
   {
     path: '/about',
