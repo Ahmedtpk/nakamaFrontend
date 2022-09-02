@@ -1,10 +1,11 @@
 <template>
-    <div class=" border-black w-full h-1/3 flex flex-col mt-6 border-t border-b">
+  <div>
+    <div v-for="(group, index) in groups" :key="index" class=" border-black w-full h-1/3 flex flex-col mt-6 border-t border-b">
       <div class="flex flex-row w-full h-3/4 mt-4 ml-2">
     <img src="../assets/academicworkwbg.png" alt="" class="h-12 w-14">
     <div class="mt-2 ml-2 w-full">
       <div class="mb-3 w-3/4">
-        <p class="text-xl text-black flex self-start  ">Academic Work</p>
+        <p class="text-xl text-black flex self-start  ">{{group.title}}</p>
         <p class="text-l  text-black">Join our group and lets have fun together!</p>
       </div>
       <div class="w-full flex items-center">
@@ -13,6 +14,7 @@
      </div>
     </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -24,6 +26,13 @@ const StyledButton = defineAsyncComponent(
 export default {
   name: 'PostCard',
   props: {
+    groups: [Object]
+
+  },
+  mounted () {
+    setTimeout(() => {
+      console.log(this.groups)
+    }, 2000);
 
   },
   components: {
