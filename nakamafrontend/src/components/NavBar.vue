@@ -5,12 +5,12 @@
     <div class="  w-4/6"></div>
     <div class=" flex flex-row justify-end items-center w-2/6 h-full">
       <div class="flex flex-row items-center">
-        <input type="text" class="w-48 h-10 border rounded-md border-nakama-pink" placeholder="Search">
+        <input type="text" class="w-48 h-10 border rounded-md border-black pl-2" placeholder="Search">
         <img src="../assets/searchIcon.png" alt="" class="w-6 h-6 absolute ml-40">
       </div>
       <div class="flex flex-row items-center">
         <button class="text-xl text-black ml-4">Iman</button>
-        <img src="../assets/imanProfile.webp" alt="" class="rounded-full h-14 w-14 border-2 border-nakama-pink ml-4 mr-8">
+        <img src="../assets/imanProfile.webp" alt="" class="rounded-full h-14 w-14 border-2 border-black ml-4 mr-8">
       </div>
     </div>        
   </div>

@@ -8,6 +8,8 @@ import logedInPage from '../views/logedInPage.vue'
 import GroupPage from '../views/GroupPage.vue'
 import ProfilePage from '../views/ProfilePage.vue'
 import friendPage from '../views/friendPage.vue'
+import ComponentHost from '../views/ComponentHost.vue'
+
 
 const routes = [
   {
@@ -39,6 +41,11 @@ const routes = [
     path: '/registrerPage',
     name: 'registrerPage',
     component: registrerPage
+  },
+  {
+    path: '/ComponentHost',
+    name: 'ComponentHost',
+    component: ComponentHost
   },
   {
     path: '/mineSider',
