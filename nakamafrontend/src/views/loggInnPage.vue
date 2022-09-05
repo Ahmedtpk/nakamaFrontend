@@ -13,13 +13,13 @@
               <p class=" flex flex-start mb-2 mt-2 font-bold">E-mail</p>
               <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="E-mail" v-model="name">
               <p class=" flex flex-start mb-2 mt-2 font-bold">passord</p>
-              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="Password*" v-model="password">
+              <input type="password" class="border h-10 w-3/4 shadow-sm rounded" placeholder="Password*" v-model="password">
             </div>
             <div class="flex flex-col items-center h-20 w-full mt-8">
               <StyledButton class="w-2/5 ml-32 mb-2" :text="'LOGIN'" @click="submitLogin"></StyledButton>
               <div class="flex flex-row w-2/3 justify-between mt-3">
                 <p class="text  font-bold" >Har du en konto?</p>
-                <a href="http://localhost:8081/#/loggInnPage" class="text font-bold text-nakama-pink">Registrer her!</a>
+                <button @click="goToRegistration" class="text font-bold text-nakama-pink hover:border-b-2 border-nakama-pink">Registrer her!</button>
               </div>
             </div>
           </div>
@@ -62,6 +62,9 @@ export default {
       // console.log(this.password)
       this.createUser()
       // this.$router.push({ name: 'loggInnPage' })
+    },
+    goToRegistration() {
+      this.$router.push({ name: 'registrerPage' })
     },
     async createUser() {
       console.log('den prøver')
