@@ -42,8 +42,7 @@ export default {
 
   },
   components: {
-    FriendsComponent
-    ,
+    FriendsComponent,
     GroupsComponent,
     EditProfileComponent
 }

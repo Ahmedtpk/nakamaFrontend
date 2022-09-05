@@ -11,14 +11,14 @@
             <div class="w-full h-fit ml-10 mt-4 flex flex-col">
               <p class="text-nakama-pink font-bold text-[35px] flex flex-start">Registrer</p>
               <p class="flex flex-start mb-2 mt-2 font-bold">Navn</p>
-              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="Name*">
+              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="Name*" v-model="name" required>
               <p class=" flex flex-start mb-2 mt-2 font-bold">E-mail</p>
-              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="E-mail">
+              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="E-mail" v-model="email">
               <p class=" flex flex-start mb-2 mt-2 font-bold">passord</p>
-              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="Password*">
+              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="Password*" v-model="password" required>
             </div>
             <div class="flex flex-col items-center h-20 w-full mt-8">
-              <StyledButton class="w-2/5 ml-32 mb-2" :text="'REGISTER'"></StyledButton>
+              <StyledButton @click="submitregistration" class="w-2/5 ml-32 mb-2" :text="'REGISTER'"></StyledButton>
               <div class="flex flex-row w-2/3 justify-between mt-3">
                 <p class="text  font-bold" >Har du en konto?</p>
                 <a href="http://localhost:8081/#/loggInnPage" class="text font-bold text-nakama-pink">Logg inn her!</a>
@@ -39,6 +39,7 @@ import { defineAsyncComponent } from 'vue'
 const StyledButton = defineAsyncComponent(
   () => import('@/components/StyledButton')
 )
+import axios from 'axios'
 
 export default {
   name: 'Hero-custom',
@@ -47,6 +48,37 @@ export default {
   },
   components: {
     StyledButton
+  },
+  data () {
+    return {
+      name: null,
+      email:null,
+      password: null
+    }
+  },
+  mounted() {
+    // this.createUser()
+
+  },
+  methods: {
+    submitregistration() {
+      // console.log('registrenring funker')
+      // console.log(this.name)
+      // console.log(this.password)
+      this.createUser()
+      this.$router.push({ name: 'loggInnPage' })
+    },
+    async createUser() {
+      try {
+        await axios.post("https://nakama1.herokuapp.com/createUserName", {
+          username: this.name,
+          password: this.password,
+          })
+          console.log('username created')
+        } catch (error) {
+          console.log(error)
+        }
+    },
   }
 }
 </script>

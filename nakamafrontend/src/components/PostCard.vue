@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="(post, index) in posts" :key="index" class=" w-max-[32rem] h-48 flex flex-col rounded-lg bg-nakama-beige shadow-xl mb-16">
+    <div v-for="(post, index) in posts" :key="index" class=" w-[32rem] h-48 flex flex-col rounded-lg bg-nakama-beige shadow-xl mb-16">
       <div class="flex flex-row w-full h-3/4 mt-4 ml-2">
         <img src="../assets/academicworkwbg.png" alt="" class="h-12 w-14">
         <div class="mt-2 ml-2">
@@ -16,8 +16,10 @@
           <div class="w-full flex items-center">
             <p class="text-s font-bold mr-2"> 34 Kommer</p>
             <p class="text-s font-bold text-black ml-2">22 Intresert</p>
-            <StyledButton :text="'Intresert'" class="ml-auto mr-4 w-22"></StyledButton>
-            <StyledButton :text="'velg dato'" class="mr-4 w-22"></StyledButton>
+            <div class="translate-x-3">
+              <StyledButton :text="'Intresert'" class="ml-auto mr-4 w-22"></StyledButton>
+              <StyledButton :text="'velg dato'" class="mr-4 w-22"></StyledButton>
+            </div>
           </div>
           <!-- <div v-for="(post, name) in posts" :key="name" class="flex flex-col">
               <p> name er {{post.title}}</p>

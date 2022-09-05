@@ -1,22 +1,23 @@
 <template>
 <div class=" w-max-screen h-max-screen flex justify-center">
     <div class="w-11/12 h-full flex flex-col">
-      <div class="w-full h-64  flex flex-row items-center">
+      <div class="w-full h-44  flex flex-row items-center">
           <p class="text-xl font-bold text-black w-1/3 flex justify-center">Discover new groups</p>
           <p class="text-xl font-bold text-black w-1/3 flex justify-center">Upcoming events</p>
           <p class="text-xl font-bold text-black w-1/3 flex justify-center">Create an event</p>
       </div>
       <div class="flex flex-row w-full h-full">
           <div class="w-1/3 h-full flex justify-center">
-            <div class="h-fit pb-4 w-10/12 bg-nakama-beige flex justify-center rounded-lg flex-col overflow-hidden">
-							<div class="overflow-y-scroll overflow-x-hidden h-[600px] ">
+            <div class="h-fit pb-4 w-10/12 bg-white flex justify-center rounded-lg flex-col overflow-hidden">
+							<div class="overflow-y-scroll overflow-x-hidden h-[600px] example">
 								<GroupCard :groups="storegroups"></GroupCard>
-								<GroupCard :groups="storegroups"></GroupCard>
-								<GroupCard :groups="storegroups"></GroupCard>
+                <GroupCard :groups="storegroups"></GroupCard>
+                <GroupCard :groups="storegroups"></GroupCard>
+                <GroupCard :groups="storegroups"></GroupCard>
 							</div>
             </div>
           </div>
-          <div class="w-1/3 h-[600px] flex flex-col items-center overflow-y-scroll overflow-x-hidden">
+          <div class="w-1/3 h-[600px] flex flex-col items-center overflow-y-scroll overflow-x-hidden example">
              <PostCard class="" :posts="storeposts"></PostCard>
           </div>
           <div class="w-1/3 h-full flex justify-center overflow-hidden">
@@ -109,3 +110,14 @@ export default {
 }
 }
 </script>
+
+<style>
+  .example::-webkit-scrollbar {
+    display: none;
+}
+
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+</style>

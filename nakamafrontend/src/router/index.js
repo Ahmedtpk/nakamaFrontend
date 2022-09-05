@@ -25,7 +25,7 @@ const routes = [
   {
     path: '/logedInPage',
     name: 'logedInPage',
-    component: logedInPage
+    component: logedInPage,
   },
   {
     path: '/nakamaHome',
@@ -35,12 +35,18 @@ const routes = [
   {
     path: '/loggInnPage',
     name: 'loggInnPage',
-    component: loggInnPage
+    component: loggInnPage,
+    meta: {
+      hideNavbar: true
+    }
   },
   {
     path: '/registrerPage',
     name: 'registrerPage',
-    component: registrerPage
+    component: registrerPage,
+    meta: {
+      hideNavbar: true
+    }
   },
   {
     path: '/ComponentHost',

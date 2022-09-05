@@ -11,15 +11,15 @@
             <div class="w-full h-fit ml-10 mt-4 flex flex-col">
               <p class="text-nakama-pink font-bold text-[35px] flex flex-start">Login</p>
               <p class=" flex flex-start mb-2 mt-2 font-bold">E-mail</p>
-              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="E-mail">
+              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="E-mail" v-model="name">
               <p class=" flex flex-start mb-2 mt-2 font-bold">passord</p>
-              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="Password*">
+              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="Password*" v-model="password">
             </div>
             <div class="flex flex-col items-center h-20 w-full mt-8">
-              <StyledButton class="w-2/5 ml-32 mb-2" :text="'LOGIN'"></StyledButton>
+              <StyledButton class="w-2/5 ml-32 mb-2" :text="'LOGIN'" @click="submitLogin"></StyledButton>
               <div class="flex flex-row w-2/3 justify-between mt-3">
                 <p class="text  font-bold" >Har du en konto?</p>
-                <a href="http://localhost:8081/#/loggInnPage" class="text font-bold text-nakama-pink">Logg inn her!</a>
+                <a href="http://localhost:8081/#/loggInnPage" class="text font-bold text-nakama-pink">Registrer her!</a>
               </div>
             </div>
           </div>
@@ -37,6 +37,7 @@ import { defineAsyncComponent } from 'vue'
 const StyledButton = defineAsyncComponent(
   () => import('@/components/StyledButton')
 )
+import axios from 'axios'
 
 export default {
   name: 'Hero-custom',
@@ -45,6 +46,52 @@ export default {
   },
   components: {
     StyledButton
+  },
+  data () {
+    return {
+      name: null,
+      password: null,
+    }
+  },
+  methods: {
+    submitLogin() {
+      console.log('registrenring funker')
+      console.log(this.name)
+      console.log(this.password)
+      // console.log(this.name)
+      // console.log(this.password)
+      this.createUser()
+      // this.$router.push({ name: 'loggInnPage' })
+    },
+    async createUser() {
+      console.log('den prøver')
+      await axios.post("https://nakama1.herokuapp.com/users/login", {
+        username: this.name,
+        password: this.password
+      })
+      .then((response) => {
+        if (response.data == 'Success') {
+          localStorage.setItem('username', this.name)
+          this.$router.push({ name: 'logedInPage' })
+        }
+        console.log(response);
+      }, (error) => {
+        console.log(error);
+      });
+//       try {
+//         await axios.post("https://nakama1.herokuapp.com/users/login", {
+//           username: this.name,
+//           password: this.password,
+//           })
+//           .then((response) => {
+//   console.log(response);
+// }
+//           // .then(data =>  console.log(data))
+//           console.log('username created')
+//         } catch (error) {
+//           console.log(error)
+//       }
+    },
   }
 }
 </script>

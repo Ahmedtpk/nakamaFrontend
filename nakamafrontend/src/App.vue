@@ -4,7 +4,7 @@
     <router-link to="/about">About</router-link>
   </nav> -->
   <div>
-    <NavBar></NavBar>
+    <NavBar v-if="!$route.meta.hideNavbar"></NavBar>
     <router-view/>
     <!-- <NavigationFooter class="mt-auto"></NavigationFooter> -->
   </div>
@@ -29,7 +29,7 @@ export default {
   components: {
     NavBar,
     // NavigationFooter
-}
+  }
 }
 </script>
 
