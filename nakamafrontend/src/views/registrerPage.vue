@@ -15,13 +15,13 @@
               <p class=" flex flex-start mb-2 mt-2 font-bold">E-mail</p>
               <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="E-mail" v-model="email">
               <p class=" flex flex-start mb-2 mt-2 font-bold">passord</p>
-              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="Password*" v-model="password" required>
+              <input type="password" class="border h-10 w-3/4 shadow-sm rounded" placeholder="Password*" v-model="password" required>
             </div>
             <div class="flex flex-col items-center h-20 w-full mt-8">
-              <StyledButton @click="submitregistration" class="w-2/5 ml-32 mb-2" :text="'REGISTER'"></StyledButton>
+              <StyledButton @click="submitRegistration" class="w-2/5 ml-32 mb-2" :text="'REGISTER'"></StyledButton>
               <div class="flex flex-row w-2/3 justify-between mt-3">
                 <p class="text  font-bold" >Har du en konto?</p>
-                <a href="http://localhost:8081/#/loggInnPage" class="text font-bold text-nakama-pink">Logg inn her!</a>
+                <button @click="goToLogin" class="text font-bold text-nakama-pink hover:border-b-2 border-nakama-pink">Logg inn her!</button>
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@ export default {
 
   },
   methods: {
-    submitregistration() {
+    submitRegistration() {
       // console.log('registrenring funker')
       // console.log(this.name)
       // console.log(this.password)
@@ -79,6 +79,9 @@ export default {
           console.log(error)
         }
     },
+    goToLogin() {
+      this.$router.push({ name: 'loggInnPage' })
+    }
   }
 }
 </script>
