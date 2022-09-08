@@ -9,6 +9,7 @@ import GroupPage from '../views/GroupPage.vue'
 import ProfilePage from '../views/ProfilePage.vue'
 import friendPage from '../views/friendPage.vue'
 import ComponentHost from '../views/ComponentHost.vue'
+import ArrangementPage from '../views/ArrangementPage.vue'
 
 
 const routes = [
@@ -21,6 +22,11 @@ const routes = [
     path: '/friendPage',
     name: 'friendPage',
     component: friendPage
+  },
+  {
+    path: '/ArrangementPage',
+    name: 'ArrangementPage',
+    component: ArrangementPage
   },
   {
     path: '/logedInPage',
