@@ -2,16 +2,17 @@
     <div class="w-max-screen h-screen flex justify-end">
       <div class="w-1/3 flex h-full flex-col gap-4">
           <div class="h-2/5 w-3/6 flex self-center mt-8"> <img src="../assets/ahmedProfilBilde.png" alt="" class="rounded-lg"></div>
+          <p class="text-xl font-bold text-black w-fit flex self-center">Ahmed D. Ahmed</p>
           <div class="flex flex-row justify-center gap-4">
             <StyledButton :text="`Add as a friend`" class="h-18 w-32"></StyledButton>
              <StyledButton :text="`Send a message`" class="h-18 w-32"></StyledButton>
               <StyledButton :text="`Poke Ahmed`" class="h-18 w-32"></StyledButton>
           </div>
-          <div class=" flex flex-col gap-4 h-[20px]">
-             <p class="text-xl font-bold text-black w-full ml-4">About Ahmed</p>
-             <div class="flex justify-center h-[20px]">
-               <BioComponent></BioComponent>
-             </div>
+          <div class=" flex flex-col h-[20px]">
+             <!-- <p class="text-xl font-bold text-black w-full ml-4">About Ahmed</p> -->
+               <BioComponent class="flex self-center pb-8"></BioComponent>
+             <!-- <div class="flex justify-center h-[20px]">
+             </div> -->
           </div>
       </div>
         <div class="w-8/12 h-full flex flex-col">

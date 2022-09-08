@@ -1,5 +1,5 @@
 <template>
-    <div class="w-max-screen h-screen bg-violet-400 flex flex-row gap-4">
+    <div class="w-max-screen h-screengit flex flex-row gap-4">
         <!-- <div class="h-fit w-fit py-2 px-2 rounded-lg bg-white border bg-opacity-60 flex gap-4 flex-col justify-start">
          <div class="flex flex-row">
         <img src="../assets/imanProfile.webp" alt="" class="rounded-full h-14 w-14 border-2 border-nakama-pink ml-2">
