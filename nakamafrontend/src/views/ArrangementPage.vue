@@ -8,7 +8,7 @@
       <div class="flex flex-row gap-4">
         <div class="text-lg font-bold text-black flex flex-row gap-1"> <input type="checkbox" name="" id="">Interested</div>
         <div class="text-lg font-bold text-black flex flex-row gap-1"><input type="checkbox" name="" id="">Going</div>
-        <StyledButton class="text-white text-lg h-8 w-20 bg-black px-0 py-0" :text="'Invite+'"></StyledButton>
+        <StyledButton class="text-white text-lg h-8 w-20 bg-nakama-pink px-0 py-0" :text="'Invite+'"></StyledButton>
       </div>
     </div>
   </div>
@@ -20,11 +20,13 @@
           <p class="text-2xl text-black ml-4 h-22 ">Details:</p>
           <div class="h-fit border border-black bg-white rounded-xl pl-2 flex flex-col">
             <p class="my-1 text-xl">Om Arrangementet:</p>
-            <p>doisjnløkfdj fsihjcø xlkælcdøkv jbøsxæxd kdkfvj bvcølkvfj fugpjidgvnj eidjsfguoh oijdfpj ijfgfhpidjighvkjø fdijpklødk ijofdkp ijsdofgfh</p>
+            <p>Minigolfpark på Ekeberg med to morsomme 18-hullsbaner med fossefall, elver, broer og mange utfordrende hindere.
+Den ene banen er litt enklere enn den andre, så her kan minigolfere i alle aldre få prøvd seg.</p>
             <p class="my-1 text-xl">praktisk info:</p>
-            <p>doisjnløkfdj fsihjcø xlkælcdøkv jbøsxæxd kdkfvj bvcølkvfj fugpjidgvnj eidjsfguoh oijdfpj ijfgfhpidjighvkjø fdijpklødk ijofdkp ijsdofgfh</p>
-            <p class="mt-1 font-bold">addresse: idshfløfkgbdvoj 22</p>
-            <p class="mt-1 font-bold">arrangør: fjnnjfljdf</p>
+            <p>Minigolfbanene ligger rett bak Ekeberghallen midt på Ekebergsletta, i nærheten av to store, gratis parkeringsplasser.</p>
+            <p class="mt-1 font-bold">addresse: Ekebergveien 103
+1178 Oslo</p>
+            <p class="mt-1 font-bold">arrangør: Iman Ahmed</p>
           </div>
         </div>
          <div class="flex flex-col w-4/12 h-fit pl-2 gap-2 overflow-hidden">
@@ -40,23 +42,23 @@
       <div class="flex flex-row hover:shadow-lg hover:rounded-lg">
          <img src="../assets/imanProfile.webp" alt="" class="rounded-full h-6 w-6 border-2 border-black ml-2">
          <p class="text-sm text-black ml-2 flex self-center font-bold">Iman Ahmed</p>
-         <p class="text-sm text-black ml-2 flex self-center"> kan jeg få vitamin wow please?</p>
+         <p class="text-sm text-black ml-2 flex self-center"> er det noen som har sjekket været den dagen?</p>
        </div>
        <div class="flex flex-row hover:shadow-lg hover:rounded-lg">
          <img src="../assets/ahmedProfilBilde.png" alt="" class="rounded-full h-6 w-6 border-2 border-black ml-2">
          <p class="text-sm text-black ml-2 flex self-center font-bold">Ahmed Ahmed</p>
-         <p class="text-sm text-black ml-2 flex self-center"> det er ikke lett sis, men stå på!</p>
+         <p class="text-sm text-black ml-2 flex self-center"> nei, men det kan jeg gjøre!</p>
        </div>
        <div class="flex flex-row hover:shadow-lg hover:rounded-lg">
          <img src="../assets/AmalProfilBilde.png" alt="" class="rounded-full h-6 w-6 border-2 border-black ml-2">
          <p class="text-sm text-black ml-2 flex self-center font-bold">Amal Ahmed</p>
-         <p class="text-sm text-black ml-2 flex self-center"> Jeg har alt og er slank og pen men jeg er fortsatt ufornøyd T-T</p>
+         <p class="text-sm text-black ml-2 flex self-center"> gleder meg, blir første gang jeg får prøve minigolf ^^</p>
        </div>
   </div>
-  <div class="flex flex-col gap-1 mt-4 w-10/12">
+  <div class="flex flex-col gap-1 mt-4  h-24 w-8/12 border border-black rounded-lg pl-2">
     <p class="font-bold text-lg text-black overflow-hidden">Write a comment:</p>
-    <input type="text" class="h-16 w-8/12 border border-black rounded-lg " placeholder="Write a comment here*">
-    <StyledButton class="text-white text-lg h-8 w-24 bg-black py-0 flex self-end" :text="'puplish!'"></StyledButton>
+    <input type="text"  placeholder="Write a comment here*">
+    <StyledButton class="text-white text-lg h-8 w-24 bg-nakama-pink py-0 mr-2 flex  self-end" :text="'puplish!'"></StyledButton>
   </div>
     </div>
      <!-- <div class="flex flex-col w-1/4 h-full pl-2 gap-2 overflow-hidden">
@@ -69,20 +71,50 @@
         </div>
       </div>
     </div> -->
-    <div class="flex flex-col w-4/12 items-end h-fit pl-2 gap-2 overflow-hidden">
+    <div class="flex flex-col w-6/12  h-fit pl-2 gap-2 overflow-hidden">
       <div class="h-16 w-full"></div>
       <div class="flex flex-col">
          <p class="text-2xl text-black ml-4 h-22 ">Who`s Interested?:</p>
-        <div class="h-fit  flex flex-col overflow-y-scroll">
-          <FriendsComponent></FriendsComponent>
+        <div class="h-fit w-9/12 flex flex-col overflow-y-scroll py-2 px-2 rounded-xl bg-nakama-beige bg-opacity-100  gap-4  ">
+        <div class="flex flex-row hover:shadow-lg hover:rounded-lg hover:bg-[#FEE5E8] bg-opacity-10 pb-2  pt-2">
+        <img src="../assets/imanProfile.webp" alt="" class="rounded-full h-14 w-14 border-2 border-black ml-2">
+        <button class="text-xl text-black ml-2">Iman Ahmed</button>
+      </div> 
+      <div class="flex flex-row hover:shadow-lg hover:rounded-lg hover:bg-[#FEE5E8] bg-opacity-10 pb-2 pt-2">
+        <img src="../assets/ahmedProfilBilde.png" alt="" class="rounded-full h-14 w-14 border-2 border-black ml-2">
+        <button class="text-xl text-black ml-2">Ahmed Ahmed</button>
+      </div>
+       <div class="flex flex-row hover:shadow-lg hover:rounded-lg hover:bg-[#FEE5E8] bg-opacity-10 pb-2 pt-2">
+        <img src="../assets/AmalProfilBilde.png" alt="" class="rounded-full h-14 w-14 border-2 border-black ml-2">
+        <button class="text-xl text-black ml-2">Amal Ahmed</button>
+      </div>
+       <div class="flex flex-row hover:shadow-lg hover:rounded-lg hover:bg-[#FEE5E8] bg-opacity-10 pb-2 pt-2">
+        <img src="../assets/IlhamProfilbilde.png" alt="" class="rounded-full h-14 w-14 border-2 border-black ml-2">
+        <button class="text-xl text-black ml-2">Ilham Ahmed</button>
+      </div>
         </div>
       </div>
         <div class="flex flex-col  h-full pl-2 gap-2 overflow-hidden">
       <div class="h-8 w-full"></div>
       <div class="flex flex-col">
          <p class="text-2xl text-black ml-4 h-22 ">Who`s coming?:</p>
-        <div class="h-fit  flex flex-col overflow-y-scroll">
-          <FriendsComponent></FriendsComponent>
+       <div class="h-fit w-9/12 flex flex-col overflow-y-scroll py-2 px-2 rounded-xl bg-nakama-beige bg-opacity-100  gap-4  ">
+        <div class="flex flex-row hover:shadow-lg hover:rounded-lg hover:bg-[#FEE5E8] bg-opacity-10 pb-2  pt-2">
+        <img src="../assets/imanProfile.webp" alt="" class="rounded-full h-14 w-14 border-2 border-black ml-2">
+        <button class="text-xl text-black ml-2">Iman Ahmed</button>
+      </div> 
+      <div class="flex flex-row hover:shadow-lg hover:rounded-lg hover:bg-[#FEE5E8] bg-opacity-10 pb-2 pt-2">
+        <img src="../assets/ahmedProfilBilde.png" alt="" class="rounded-full h-14 w-14 border-2 border-black ml-2">
+        <button class="text-xl text-black ml-2">Ahmed Ahmed</button>
+      </div>
+       <div class="flex flex-row hover:shadow-lg hover:rounded-lg hover:bg-[#FEE5E8] bg-opacity-10 pb-2 pt-2">
+        <img src="../assets/AmalProfilBilde.png" alt="" class="rounded-full h-14 w-14 border-2 border-black ml-2">
+        <button class="text-xl text-black ml-2">Amal Ahmed</button>
+      </div>
+       <div class="flex flex-row hover:shadow-lg hover:rounded-lg hover:bg-[#FEE5E8] bg-opacity-10 pb-2 pt-2">
+        <img src="../assets/IlhamProfilbilde.png" alt="" class="rounded-full h-14 w-14 border-2 border-black ml-2">
+        <button class="text-xl text-black ml-2">Ilham Ahmed</button>
+      </div>
           
         </div>
       </div>
@@ -120,9 +152,9 @@ import { defineAsyncComponent } from 'vue'
 const StyledButton = defineAsyncComponent(
   () => import('@/components/StyledButton')
 )
-const FriendsComponent = defineAsyncComponent(
-  () => import('@/components/FriendsComponent')
-)
+// const FriendsComponent = defineAsyncComponent(
+//   () => import('@/components/FriendsComponent')
+// )
 // const UnderDevelopmentComponent = defineAsyncComponent(
 //   () => import('@/components/UnderDevelopmentComponent')
 // )
@@ -130,7 +162,7 @@ export default {
   name: 'Hero-custom',
 components: {
     StyledButton,
-    FriendsComponent
+    // FriendsComponent
     // UnderDevelopmentComponent
   }
 }
