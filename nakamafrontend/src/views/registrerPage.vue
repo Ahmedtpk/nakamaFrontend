@@ -11,9 +11,9 @@
             <div class="w-full h-fit ml-10 mt-4 flex flex-col">
               <p class="text-nakama-pink font-bold text-[35px] flex flex-start">Registrer</p>
               <p class="flex flex-start mb-2 mt-2 font-bold">Navn</p>
-              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="Name*" v-model="name" required>
+              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="Name*" v-model="email" required>
               <p class=" flex flex-start mb-2 mt-2 font-bold">E-mail</p>
-              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="E-mail" v-model="email">
+              <input type="text" class="border h-10 w-3/4 shadow-sm rounded" placeholder="E-mail" v-model="name">
               <p class=" flex flex-start mb-2 mt-2 font-bold">passord</p>
               <input type="password" class="border h-10 w-3/4 shadow-sm rounded" placeholder="Password*" v-model="password" required>
             </div>

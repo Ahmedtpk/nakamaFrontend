@@ -36,7 +36,10 @@ const routes = [
   {
     path: '/nakamaHome',
     name: 'nakamaHome',
-    component: nakamaHome
+    component: nakamaHome,
+    meta: {
+      hideNavbar: true
+    }
   },
   {
     path: '/loggInnPage',
