@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="(post, index) in posts" :key="index" class=" w-[32rem] h-fit flex flex-col rounded-lg bg-nakama-beige shadow-xl mb-16">
+    <div v-for="(post, index) in posts" :key="index" class=" w-[32rem] h-fit flex flex-col rounded-lg bg-nakama-beige shadow-xl mb-16 cursor-pointer hover:shadow-2xl" @click="goToArrangementPage">
       <div class="flex flex-row w-full h-3/4 mt-4 ml-2">
         <img src="../assets/academicworkwbg.png" alt="" class="h-12 w-14">
         <div class="mt-2 ml-2">
@@ -55,6 +55,11 @@ export default {
     //   console.log(this.posts)
 
     // }, 1000);
+  },
+  methods: {
+    goToArrangementPage() {
+      this.$router.push({ name: 'ArrangementPage' })
+    }
   }
 }
 </script>
