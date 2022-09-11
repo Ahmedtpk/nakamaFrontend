@@ -1,15 +1,15 @@
 <template>
   <div>
-    <img src="../assets/backgroundWithoutBlackBorder.png" class="z-0 opacity-60 absolute w-screen h-screen" alt="">
-    <div class="flex justify-center items-center h-screen w-screen absolute">
-    <div class="border-2 h-3/5 w-3/5 flex flex-col border-nakama-pink rounded font-semibold bg-white bg-opacity-75">
+    <img src="../assets/backgroundWithoutBlackBorder.png" class="z-0 opacity-90 absolute w-screen h-screen" alt="">
+    <div class="flex justify-center items-center h-full w-full absolute">
+    <div class="border-2 h-[600px] w-[1000px] flex flex-col border-nakama-pink rounded font-semibold bg-white bg-opacity-75">
           <div class="flex justify-center items-center">
               <div class="flex flex-col items-center justify-center mt-36">
                 <img src="../assets/rsz_shadow-removebg-preview.png" alt="" class="mt-16 w-[500px] h-[250px] opacity-10 absolute ">
                 <img alt="Vue logo" src="../assets/image-removebg-preview.png" class="w-[550px] mt-12 absolute">
               </div>
           </div>
-          <div class="mt-56 relative">
+          <div class="mt-56 ">
             <p class="text-[30px] font-[Garamond] mb-7 text-center">Every new friend is a new adventure</p>
             <div class="flex flex-row justify-center">
               <StyledButton class="w-36" :text="'LOGIN'" @click="goToLogIn"></StyledButton>
