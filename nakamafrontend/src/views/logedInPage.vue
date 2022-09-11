@@ -11,9 +11,6 @@
             <div class="h-fit pb-4 w-10/12 bg-white flex justify-center rounded-lg flex-col overflow-hidden">
 							<div class="overflow-y-scroll overflow-x-hidden h-[600px] example">
 								<GroupCard :groups="storegroups"></GroupCard>
-                <GroupCard :groups="storegroups"></GroupCard>
-                <GroupCard :groups="storegroups"></GroupCard>
-                <GroupCard :groups="storegroups"></GroupCard>
 							</div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="(group, index) in groups" :key="index" class=" border-black w-full h-1/3 flex flex-col mt-6 border-t border-b">
+    <div v-for="(group, index) in groups" :key="index" class=" border-black w-full h-1/3 flex flex-col mt-6 border-t border-b hover:shadow-xl cursor-pointer" @click="goToGroupPage">
       <div class="flex flex-row w-full h-3/4 mt-4 ml-2">
     <img src="../assets/academicworkwbg.png" alt="" class="h-12 w-14">
     <div class="mt-2 ml-2 w-full">
@@ -34,6 +34,11 @@ export default {
       console.log(this.groups)
     }, 2000);
 
+  },
+  methods: {
+    goToGroupPage() {
+      this.$router.push({ name: 'GroupPage' })
+    }
   },
   components: {
     StyledButton
