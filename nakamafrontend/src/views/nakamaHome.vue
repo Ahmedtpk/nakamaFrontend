@@ -10,11 +10,11 @@
               </div>
           </div>
           <div class="mt-56 relative">
-            <p class="text-[30px] font-[Garamond] mb-7">Every new friend is a new adventure</p>
+            <p class="text-[30px] font-[Garamond] mb-7 text-center">Every new friend is a new adventure</p>
             <div class="flex flex-row justify-center">
-              <StyledButton class="w-36" :text="'LOGIN'"></StyledButton>
+              <StyledButton class="w-36" :text="'LOGIN'" @click="goToLogIn"></StyledButton>
               <div class="w-10"></div>
-              <StyledButton class="w-36" :text="'REGISTER'"></StyledButton>   
+              <StyledButton class="w-36" :text="'REGISTER'" @click="goToRegistration"></StyledButton>   
             </div>      
           </div>
        </div>
@@ -31,6 +31,14 @@ export default {
   name: 'Hero-custom',
   props: {
 
+  },
+  methods: {
+    goToLogIn(){
+      this.$router.push({ name: 'loggInnPage' })
+    },
+    goToRegistration() {
+      this.$router.push({ name: 'registrerPage' })
+    },
   },
   components: {
     StyledButton

@@ -4,7 +4,7 @@
             <div class="w-full h-32 flex flex-row items-center">
           <p class="text-xl font-bold text-black w-1/3 flex justify-center">About Academic Work</p>
           <p class="text-xl font-bold text-black w-1/3 flex justify-center">Upcoming Academic Work events</p>
-          <p class="text-xl font-bold text-black w-1/3 flex justify-center">Create an event</p>
+          <p class="text-xl font-bold text-black w-3/12 flex justify-center">Create an event</p>
       </div>
       <div class="flex flex-row w-full h-full ">
           <div class="w-1/3  flex-col h-full  red-700">
@@ -20,10 +20,10 @@
             </div>
           </div>
           <div class="w-1/3 h-full flex flex-col items-center overflow-hidden gap-11 pb-7">
-             <PostCard ></PostCard>
+             <PostCard :posts="storeposts"></PostCard>
              <PostCard></PostCard>
           </div>
-          <div class="w-1/3 h-full pb-7 flex justify-center overflow-hidden">
+          <div class="w-3/12 h-full pb-7 flex justify-center overflow-hidden">
              <CreatePost></CreatePost>
           </div>
       </div>
@@ -33,6 +33,7 @@
 
 <script>
 import { defineAsyncComponent } from 'vue'
+import store from '@/store'
 const PostCard = defineAsyncComponent(
   () => import('@/components/PostCard')
 )
@@ -61,6 +62,24 @@ export default {
     UnderDevelopmentComponent
     // GroupCard,
  
-}
+},
+mounted () {
+  this.teststore()
+  setTimeout(() => {
+    console.log(this.storeposts)
+    
+  }, 2000);
+},
+methods: {
+    teststore() {
+        this.$store.dispatch('posts/recivedposts')
+        console.log('test funker')
+    },
+  },
+computed: {
+  storeposts () {
+      return store.state.posts.posts
+    },
+  }
 }
 </script>
