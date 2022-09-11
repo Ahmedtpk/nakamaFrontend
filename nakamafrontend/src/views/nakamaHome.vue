@@ -2,7 +2,7 @@
   <div>
     <img src="../assets/backgroundWithoutBlackBorder.png" class="z-0 opacity-90 absolute w-screen h-screen" alt="">
     <div class="flex justify-center items-center h-full w-full absolute">
-    <div class="border-2 h-[600px] w-[1000px] flex flex-col border-nakama-pink rounded font-semibold bg-white bg-opacity-75">
+    <div class="border-2 h-[550px] w-[860px] flex flex-col border-nakama-pink rounded font-semibold bg-white bg-opacity-75">
           <div class="flex justify-center items-center">
               <div class="flex flex-col items-center justify-center mt-36">
                 <img src="../assets/rsz_shadow-removebg-preview.png" alt="" class="mt-16 w-[500px] h-[250px] opacity-10 absolute ">
