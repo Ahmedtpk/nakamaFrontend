@@ -16,17 +16,17 @@
           </div>
       </div>
         <div class="w-8/12 h-full flex flex-col">
-            <div class="w-full h-32 flex flex-row items-center">
+            <div class="w-full h-32 flex flex-row items-center mt-8 mb-8">
           <p class="text-xl font-bold text-black w-1/2 flex justify-center">Your upcoming events</p>
           <p class="text-xl font-bold text-black w-1/2 flex justify-center">Your invitations</p>
       </div>
       <div class="flex flex-row w-full h-full gap-4 ">
-          <div class="w-1/2 h-[800px] flex flex-col items-center overflow-y-scroll overflow-x-hidden gap-11 pb-7">
+          <div class="w-2/3 h-[800px] flex flex-col items-center overflow-y-scroll overflow-x-hidden gap-11 pb-7 example">
              <PostCard :posts="storeposts" ></PostCard>
           </div>
         
-          <div class="w-1/2 h-full pb-7 flex flex-col justify-center overflow-hidden gap-2">
-            <UnderDevelopmentComponent class="h-1/2 w-10/12"></UnderDevelopmentComponent>
+          <div class="w-1/3 h-full pb-7 flex flex-col justify-center overflow-hidden gap-2">
+            <UnderDevelopmentComponent class="h-1/2 w-full"></UnderDevelopmentComponent>
              <p class="text-xl font-bold text-black w-1/2 flex justify-center">Your invitations</p>
              <UnderDevelopmentComponent class="h-1/2 w-10/12"></UnderDevelopmentComponent>
           </div>
@@ -148,3 +148,14 @@ export default {
 	},
 }
 </script>
+
+<style>
+  .example::-webkit-scrollbar {
+    display: none;
+}
+
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+</style>
