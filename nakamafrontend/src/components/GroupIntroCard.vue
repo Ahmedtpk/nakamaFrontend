@@ -5,7 +5,7 @@
       <div class="mt-2 ml-2 w-full">
         <div class="mb-3 w-full">
           <p class="text-xl text-black flex self-start  ">Academic Work</p>
-          <p class="text-l  text-black">We are a group of loving developers who are always looking for new work friends! everyone is welcome to join ^.^</p>
+          <p class="text-l  text-black">We are a group of fun-loving developers who are always looking for new work friends! everyone is welcome to join ^.^</p>
         </div>
         <div class="w-full flex items-center">
         <StyledButton :text="'Follow'" class="ml-auto mr-4 w-22 mb-2"></StyledButton>
