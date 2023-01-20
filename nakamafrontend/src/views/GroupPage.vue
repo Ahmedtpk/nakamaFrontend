@@ -2,8 +2,8 @@
     <div class="w-max-screen h-max-screen  flex justify-center">
         <div class="w-full h-full flex flex-col">
             <div class="w-full h-32 flex flex-row items-center">
-          <p class="text-xl font-bold text-black w-1/3 flex justify-center">About Academic Work</p>
-          <p class="text-xl font-bold text-black w-1/3 flex justify-center">Upcoming Academic Work events</p>
+          <p class="text-xl font-bold text-black w-1/3 flex justify-center">About Coop</p>
+          <p class="text-xl font-bold text-black w-1/3 flex justify-center">Upcoming Coop events</p>
           <p class="text-xl font-bold text-black w-3/12 flex justify-center">Create an event</p>
       </div>
       <div class="flex flex-row w-full h-full ">
@@ -15,7 +15,7 @@
               <GroupCard></GroupCard> -->
             </div>
             <div class="h-full flex gap-4 flex-col justify-center">
-               <p class="text-xl font-bold text-black self-center"> Academic Work Calender</p>
+               <p class="text-xl font-bold text-black self-center"> Coop Calender</p>
               <UnderDevelopmentComponent class=""></UnderDevelopmentComponent>
             </div>
           </div>

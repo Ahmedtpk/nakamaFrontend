@@ -4,7 +4,7 @@
       <img src="../assets/academicworkwbg.png" alt="" class="h-full w-1/3">
       <div class="mt-2 ml-2 w-full">
         <div class="mb-3 w-full">
-          <p class="text-xl text-black flex self-start  ">Academic Work</p>
+          <p class="text-xl text-black flex self-start  ">Coop</p>
           <p class="text-l  text-black">We are a group of fun-loving developers who are always looking for new work friends! everyone is welcome to join ^.^</p>
         </div>
         <div class="w-full flex items-center">
