@@ -5,7 +5,7 @@
         <img src="../assets/academicworkwbg.png" alt="" class="h-12 w-14">
         <div class="mt-2 ml-2">
           <div class="flex flex-row w-full mb-2">
-            <p class="text-xs font-bold">VismaITDS</p>
+            <p class="text-xs font-bold">Coop</p>
             <p class="text-xs font-bold text-black ml-2">Monthly Event</p>
             <p class="text-xs font-bold text-red-500 ml-auto mr-4">estimert tidspunkt:10/09</p>
           </div>

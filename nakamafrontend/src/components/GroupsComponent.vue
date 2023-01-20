@@ -4,7 +4,7 @@
     <div class="h-[600px] flex gap-4 flex-col justify-start overflow-auto">
       <div class="flex flex-row hover:shadow-lg hover:rounded-lg hover:bg-[#FEE5E8] bg-opacity-10 pb-2 pt-2 pt-2">
         <img src="../assets/academicworkwbg.png" alt="" class="rounded-full h-14 w-14 border-2 border-black ml-2">
-        <button class="text-xl text-black ml-2">Academic Work</button>
+        <button class="text-xl text-black ml-2">Coop</button>
       </div>
       <div class="flex flex-row hover:shadow-lg hover:rounded-lg hover:bg-[#FEE5E8] bg-opacity-10 pb-2 pt-2">
         <img src="../assets/KiwiLogo.jpg" alt="" class="rounded-full h-14 w-14 border-2 border-black ml-2">
